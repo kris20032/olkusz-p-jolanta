@@ -381,7 +381,8 @@ section{padding-block:clamp(64px,8vw,128px)}
 .nav{transition:box-shadow .4s ease,background .4s ease}
 .nav.is-stuck{box-shadow:0 1px 0 var(--line),0 14px 30px -24px rgba(0,0,0,.45)}
 .nav-inner{transition:height .35s var(--ease)}
-.nav.is-stuck .nav-inner{height:60px}
+.nav.is-stuck .nav-inner{height:76px}
+@media(max-width:680px){.nav.is-stuck .nav-inner{height:60px}}
 
 /* 6) MANIFESTO — pełnoekranowy cytat-bohater (zastępuje generyczne „Dlaczego my") */
 .manifesto{background:var(--paper-2);text-align:center}
@@ -401,9 +402,11 @@ section{padding-block:clamp(64px,8vw,128px)}
 @media(max-width:760px){.gateways{grid-template-columns:1fr}.gateway{aspect-ratio:16/10}}
 
 /* 8) LOGO klienta w nagłówku (gdy podane --logo) */
-.brand-logo{height:56px;width:auto;max-width:240px;object-fit:contain;display:block}
-.nav.is-stuck .brand-logo{height:46px}
-@media(max-width:680px){.brand-logo{height:44px}}
+.brand-logo{height:76px;width:auto;max-width:260px;object-fit:contain;display:block;border-radius:10px}
+.nav.is-stuck .brand-logo{height:60px}
+@media(max-width:680px){.brand-logo{height:56px}}
+.nav-inner{height:92px}
+@media(max-width:680px){.nav-inner{height:72px}}
 
 /* === rodzina: wellness === */
 /* ============================================================
